@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Horgássz Velünk!</string>
+    <string name="reservations_list_title">Foglalásaim</string>
+    <string name="reservations_edit_title">Szerkesztem</string>
+    <string name="wellcome_title">Üdvözöl az Aranypart Horgásztó :)</string>
+
+    <string name="loginEmaiLlabel">E-mail</string>
+    <string name="loginPasswordLabel">Jelszó</string>
+    <string name="pondLabel">Tó</string>
+    <string name="stageLabel">Stég</string>
+    <string name="statusLabel">Státusz</string>
+
+    <string name="emailHint">E-mail címed</string>
+    <string name="passwordHint">Jelszavad</string>
+
+    <string name="loginButtonText">Bejelentkezés</string>
+    <string name="cancelReservationButtonText">Lemondás</string>
+    <string name="editReservationButtonText">Szerkeszt</string>
+    <string name="confirmReservationChangeButtonText">Elküld</string>
+    <string name="cancelReservationChangeButtonText">Vissza</string>
+    <string name="confirmButtonText">Vettem</string>
+
+    <string name="updateSuccesfulMessage">"Foglalás sikeresen elmentve."</string>
+    <string name="updateUnsuccesfulMessage">"A módosítását nem sikerült elmenteni. Próbálja meg később."</string>
+    <string name="incorrectDataFormatMessage">"Hibás adatformátum! Kérlek kövesd az útmutatót!"</string>
+    <string name="cancelSuccesfulMessage">"Foglalás sikeresen lemondva."</string>
+    <string name="cancelUsuccesfulMessage">"Foglalás sikertelen. Próbálja meg később."</string>
+    <string name="reservationsUnretrievableMessage">"A foglalásokat nem sikerült lekérni. Próbálja meg később."</string>
+    <string name="bigCancelNotificationSuccess"><big>"Foglalás sikeresen lemondva."</big></string>
+    <string name="bigCancelNotificationFailure"><big>"A foglalás lemondása nem sikerült!."</big></string>
+</resources>

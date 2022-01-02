@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".ReservationEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pondLabelid"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:labelFor="@id/pondNameEditId"
+            android:text="@string/pondLabel"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pondNameEditId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:text="TextView"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stageLabelId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:labelFor="@id/stageNumberEditID"
+            android:text="@string/stageLabel"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/stageNumberEditID"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:text="TextView"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/statusLabelId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:labelFor="@id/statusTextViewId"
+            android:text="@string/statusLabel"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusTextViewId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:text="TextView"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dateFromEditId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:text="TextView"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/rightarrow" />
+
+        <EditText
+            android:id="@+id/dateToEditId"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:backgroundTint="@color/lake_secondary_light"
+            android:gravity="start|center_vertical"
+            android:text="TextView"
+            android:textColor="#795548"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reservationEditConfirmButtonId"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:text="@string/confirmReservationChangeButtonText"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/backButtonId"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_corners_template"
+            android:text="@string/cancelReservationChangeButtonText"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

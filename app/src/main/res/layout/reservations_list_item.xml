@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/lake_secondary_color_variant"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <Button
+                android:id="@+id/reservationEditConfirmButtonId"
+                android:layout_width="136dp"
+                android:layout_height="48dp"
+                android:layout_margin="25dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginEnd="52dp"
+                android:background="@drawable/rounded_corners_template"
+                android:gravity="center|start"
+                android:text="@string/editReservationButtonText"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/backButtonId"
+                app:layout_constraintTop_toBottomOf="@+id/fieldsRightLayoutId"
+                app:rippleColor="#FF3D00" />
+
+            <Button
+                android:id="@+id/backButtonId"
+                android:layout_width="136dp"
+                android:layout_height="48dp"
+                android:layout_margin="25dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rounded_corners_template"
+                android:gravity="center|start"
+                android:text="@string/cancelReservationButtonText"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/reservationEditConfirmButtonId"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldsLeftLayoutId"
+                app:rippleColor="#FF3D00" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldsRightLayoutId"
+                android:layout_width="190dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fieldsLeftLayoutId"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/dateFromEditId"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/rightArrowIconId"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/rightArrowIconId"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintBottom_toTopOf="@+id/dateToEditId"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateFromEditId" />
+
+                <TextView
+                    android:id="@+id/dateToEditId"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rightArrowIconId" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fieldsLeftLayoutId"
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/pondLabelid"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:labelFor="@id/pondNameEditId"
+                    android:text="@string/pondLabel"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/stageLabelId"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/stageLabelId"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:labelFor="@id/stageNumberEditID"
+                    android:text="@string/stageLabel"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/statusLabelId"
+                    app:layout_constraintStart_toStartOf="@+id/pondLabelid"
+                    app:layout_constraintTop_toBottomOf="@+id/pondLabelid" />
+
+                <TextView
+                    android:id="@+id/statusLabelId"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:labelFor="@id/statusTextViewId"
+                    android:text="@string/statusLabel"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/stageLabelId"
+                    app:layout_constraintTop_toBottomOf="@+id/stageLabelId" />
+
+                <TextView
+                    android:id="@+id/pondNameEditId"
+                    android:layout_width="125dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/stageNumberEditID"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/statusTextViewId"
+                    android:layout_width="125dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/stageNumberEditID"
+                    app:layout_constraintTop_toBottomOf="@+id/stageNumberEditID"
+                    app:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/stageNumberEditID"
+                    android:layout_width="125dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners_template"
+                    android:backgroundTint="@color/lake_secondary_light"
+                    android:gravity="center|start"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/statusTextViewId"
+                    app:layout_constraintEnd_toEndOf="@+id/pondNameEditId"
+                    app:layout_constraintTop_toBottomOf="@+id/pondNameEditId" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
